@@ -1,0 +1,29 @@
+﻿<Window x:Class="PractTRPO.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PractTRPO"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Disign/scale_1200.png" Stretch="Uniform"/>
+        </Grid.Background>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="350,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="575,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label BorderThickness="1" BorderBrush="Black" x:Name="bigLabel" Content="Журнал решений:&#xD;&#xA;" HorizontalAlignment="Left" Margin="350,110,0,0" VerticalAlignment="Top" Height="270" Width="345" Background="#FFDDDDDD"/>
+        <Label Content="Задайте основание" HorizontalAlignment="Left" Margin="75,32,0,0" VerticalAlignment="Top" Height="28" Width="120" Background="#FFF03F31"/>
+        <Label Content="Первое число" HorizontalAlignment="Left" Margin="350,32,0,0" VerticalAlignment="Top" Height="28" Width="120" Background="#FFF4B593"/>
+        <Label Content="Второе число" HorizontalAlignment="Left" Margin="575,32,0,0" VerticalAlignment="Top" Height="28" Width="120" Background="#FF3284C4"/>
+        <TextBox x:Name="textBoxOsn" HorizontalAlignment="Left" Height="23" Margin="75,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Сложение" HorizontalAlignment="Left" Margin="75,110,0,0" VerticalAlignment="Top" Width="230" Height="50" Click="Button_Click"/>
+        <Button Content="Вычитание" HorizontalAlignment="Left" Margin="75,165,0,0" VerticalAlignment="Top" Width="230" Height="50" Click="Button_Click_1"/>
+        <Button Content="Умножение" HorizontalAlignment="Left" Margin="75,220,0,0" VerticalAlignment="Top" Width="230" Height="50" Click="Button_Click_2"/>
+        <Button Content="Целочисленное деление" HorizontalAlignment="Left" Margin="75,275,0,0" VerticalAlignment="Top" Width="230" Height="50" Click="Button_Click_3"/>
+        <Button Content="Остаток от деления" HorizontalAlignment="Left" Margin="75,330,0,0" VerticalAlignment="Top" Width="230" Height="50" Click="Button_Click_4"/>
+        <Button HorizontalAlignment="Left" Margin="720,330,0,0" VerticalAlignment="Top" Width="62" Height="49" Click="Button_Click_5" Background="#FFDDDDDD">
+            <Image Source="Disign/clear.png"  Stretch="Fill"/>
+        </Button>
+    </Grid>
+</Window>
